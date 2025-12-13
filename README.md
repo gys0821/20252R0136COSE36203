@@ -9,6 +9,8 @@ It is recommended to run this in a Google Colab environment.
 
 ---
 
+<a name="english"></a>
+
 ## Project Overview
 
 This repository contains the full workflow from data collection and preprocessing to model training.  
@@ -67,6 +69,7 @@ Access methods, external storage (Google Drive) availability, and package instal
 
 ---
 
+<a name="korean"></a>
 ## 프로젝트 개요
 
 본 저장소는 데이터 수집, 전처리 단계부터 모델 학습 단계까지의 전체 워크플로우를 포함하고 있습니다.  
