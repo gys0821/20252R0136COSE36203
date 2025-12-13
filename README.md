@@ -4,8 +4,72 @@ Assignment, Korea University
 
 It is recommended to run this in a Google Colab environment.
 
+[![English](https://img.shields.io/badge/Language-English-blue)](#english)
+[![Korean](https://img.shields.io/badge/Language-Korean-red)](#korean)
+
 ---
 
+<a name="english"></a>
+
+## Project Overview
+
+This repository contains the full workflow from data collection and preprocessing to model training.  
+Depending on the grading environment, please verify and adjust the following settings:
+
+- Drive mount settings at the top of **`DataPreprocessing.ipynb`**
+- Drive mount settings at the top of **`ModelTraining.ipynb`**
+- Whether to comment/uncomment `!pip install optuna` at the bottom of **`ModelTraining.ipynb`**
+
+---
+
+## File Structure
+
+### 0. gathering/
+Contains `.py` files for crawling data from the KBO official website and performing initial preprocessing. The collected and initially preprocessed data is already saved in `dataset/`, so this folder is included for reference only.
+
+### 1. DataPreprocessing.ipynb
+A notebook for preprocessing the dataset. It includes tasks such as missing value handling, label encoding, and data splitting for model training.
+
+*Note: If not running on Google Colab, please comment out the `drive mount` code at the top.*
+
+### 2. ModelTraining.ipynb
+A notebook for training the model using the preprocessed data. It includes hyperparameter optimization using **Optuna**.  
+*Note: If not running on Google Colab, please comment out `!pip install optuna`. Also, adjust the Drive connection settings according to your environment.*
+
+### 3. dataset/
+Contains the raw dataset (pre-preprocessing) used for model training.
+The notebooks are configured to load data using relative or absolute paths suitable for the execution environment.
+* `dataset/processed/`: Stores data processed by `DataPreprocessing.ipynb`.
+* `ModelTraining.ipynb` loads files from this directory.
+
+### 4. zips/
+Contains the original compressed dataset files. This directory does not interact directly with the code.
+
+### 5. environment.yml
+Defines the packages and versions required for the Conda environment.  
+If the grading environment is Conda-based, use this file to reconstruct the environment.  
+*Note: This environment supports `DataPreprocessing.ipynb` and `ModelTraining.ipynb`, but may not support crawling codes.*
+
+---
+
+## Environment & Grading Notes
+Access methods, external storage (Google Drive) availability, and package installation permissions may vary by system. Please check:
+
+1. **Enable/Disable drive mount code**
+2. **Verify file paths match the environment**
+3. **Check `!pip install optuna` line**
+4. **Verify dataset and zip file paths**
+
+---
+
+## Execution Order
+
+1. Run **`DataPreprocessing.ipynb`** → Generates preprocessed data
+2. Run **`ModelTraining.ipynb`** → Performs model training and evaluation
+
+---
+
+<a name="korean"></a>
 ## 프로젝트 개요
 
 본 저장소는 데이터 수집, 전처리 단계부터 모델 학습 단계까지의 전체 워크플로우를 포함하고 있습니다.  
