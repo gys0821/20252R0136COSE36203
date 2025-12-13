@@ -17,6 +17,18 @@ Depending on the grading environment, please verify and adjust the following set
 
 ---
 
+## File Structure
+
+### 0. gathering/
+Contains `.py` files for crawling data from the KBO official website and performing initial preprocessing. The collected and initially preprocessed data is already saved in `dataset/`, so this folder is included for reference only.
+
+### 1. DataPreprocessing.ipynb
+A notebook for preprocessing the dataset. It includes tasks such as missing value handling, label encoding, and data splitting for model training.
+
+*Note: If not running on Google Colab, please comment out the `drive mount` code at the top.*
+
+---
+
 ## 프로젝트 개요
 
 본 저장소는 데이터 수집, 전처리 단계부터 모델 학습 단계까지의 전체 워크플로우를 포함하고 있습니다.  
