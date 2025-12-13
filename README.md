@@ -30,7 +30,7 @@ Contains `.py` files for crawling data from the KBO official website and perform
 ### 1. DataPreprocessing.ipynb
 A notebook for preprocessing the dataset. It includes tasks such as missing value handling, label encoding, and data splitting for model training.
 
-*Note: If not running on Google Colab, please comment out the `drive mount` code at the top.*
+*Note: If your grading environment is not Google Colab or you are not using Google Drive, please comment out the `drive mount` setup at the top. If you need to use mount, please uncomment it.*
 
 ### 2. ModelTraining.ipynb
 A notebook for training the model using the preprocessed data. It includes hyperparameter optimization using **Optuna**.  
@@ -89,7 +89,8 @@ KBO 공식 홈페이지로부터 데이터를 수집하고, 초기 전처리를 
 ### 1. DataPreprocessing.ipynb
 데이터셋을 기반으로 전처리를 수행하는 노트북입니다. 결측값 처리, 라벨 인코딩, 데이터 분할 등 모델 학습을 위한 사전 작업을 포함합니다.  
 
-채점 환경이 Google Colab 환경이 아닐 경우, 상단의 `drive mount` 설정을 주석 처리해주시면 됩니다.
+채점 환경이 Google Colab 환경이 아니거나 Google Drive를 이용하지 않으시는 경우, 상단의 `drive mount` 설정을 주석 처리해주시면 됩니다.  
+mount 이용이 필요하신 경우 주석을 해제해주시면 됩니다.
 
 ### 2. ModelTraining.ipynb
 전처리된 데이터를 활용하여 실제 모델 학습을 수행하는 노트북입니다. Optuna를 사용한 하이퍼파라미터 최적화 기능이 포함되어 있습니다.  
