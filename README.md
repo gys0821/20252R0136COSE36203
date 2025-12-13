@@ -45,7 +45,14 @@ Defines the packages and versions required for the Conda environment.
 If the grading environment is Conda-based, use this file to reconstruct the environment.  
 *Note: This environment supports `DataPreprocessing.ipynb` and `ModelTraining.ipynb`, but may not support crawling codes.*
 
+---
 
+## Environment & Grading Notes
+Access methods, external storage (Google Drive) availability, and package installation permissions may vary by system. Please check:
+1. **Enable/Disable drive mount code**
+2. **Verify file paths match the environment**
+3. **Check `!pip install optuna` line**
+4. **Verify dataset and zip file paths**
 
 ---
 
