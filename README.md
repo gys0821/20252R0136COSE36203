@@ -4,6 +4,9 @@ Assignment, Korea University
 
 It is recommended to run this in a Google Colab environment.
 
+[![English](https://img.shields.io/badge/Language-English-blue)](#english)
+[![Korean](https://img.shields.io/badge/Language-Korean-red)](#korean)
+
 ---
 
 ## Project Overview
@@ -55,7 +58,7 @@ Access methods, external storage (Google Drive) availability, and package instal
 3. **Check `!pip install optuna` line**
 4. **Verify dataset and zip file paths**
 
---
+---
 
 ## Execution Order
 
