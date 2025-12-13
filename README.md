@@ -6,6 +6,17 @@ It is recommended to run this in a Google Colab environment.
 
 ---
 
+## Project Overview
+
+This repository contains the full workflow from data collection and preprocessing to model training.  
+Depending on the grading environment, please verify and adjust the following settings:
+
+- Drive mount settings at the top of **`DataPreprocessing.ipynb`**
+- Drive mount settings at the top of **`ModelTraining.ipynb`**
+- Whether to comment/uncomment `!pip install optuna` at the bottom of **`ModelTraining.ipynb`**
+
+---
+
 ## 프로젝트 개요
 
 본 저장소는 데이터 수집, 전처리 단계부터 모델 학습 단계까지의 전체 워크플로우를 포함하고 있습니다.  
