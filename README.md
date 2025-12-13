@@ -31,6 +31,12 @@ A notebook for preprocessing the dataset. It includes tasks such as missing valu
 A notebook for training the model using the preprocessed data. It includes hyperparameter optimization using **Optuna**.  
 *Note: If not running on Google Colab, please comment out `!pip install optuna`. Also, adjust the Drive connection settings according to your environment.*
 
+### 3. dataset/
+Contains the raw dataset (pre-preprocessing) used for model training.
+The notebooks are configured to load data using relative or absolute paths suitable for the execution environment.
+* `dataset/processed/`: Stores data processed by `DataPreprocessing.ipynb`.
+* `ModelTraining.ipynb` loads files from this directory.
+
 ---
 
 ## 프로젝트 개요
