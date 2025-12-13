@@ -37,8 +37,15 @@ The notebooks are configured to load data using relative or absolute paths suita
 * `dataset/processed/`: Stores data processed by `DataPreprocessing.ipynb`.
 * `ModelTraining.ipynb` loads files from this directory.
 
-#### 4. zips/
+### 4. zips/
 Contains the original compressed dataset files. This directory does not interact directly with the code.
+
+### 5. environment.yml
+Defines the packages and versions required for the Conda environment.  
+If the grading environment is Conda-based, use this file to reconstruct the environment.  
+*Note: This environment supports `DataPreprocessing.ipynb` and `ModelTraining.ipynb`, but may not support crawling codes.*
+
+
 
 ---
 
